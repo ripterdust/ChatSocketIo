@@ -3,17 +3,16 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	
-	return<nav>
-	
-		<Link to="/" className="link"><i></i></Link>
-		<div className="navLinks">
-			<Link to="/">Inicio</Link>
-			<Link to="/chat">Chatear</Link>
-			<Link to="/cuenta">Mi cuenta</Link>
-		</div>
-
-	</nav>
-
+	return <nav className="purple darken-3 z-depth-0">
+    <div class="nav-wrapper container">
+      <Link class="brand-logo left" to="/">ChatIo</Link>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><Link to="/">Inicio</Link></li>
+        <li><Link to="/chat">Chatea</Link></li>
+        <li><Link to="/about">Acerca de</Link></li>
+      </ul>
+    </div>
+  </nav>
 }
 
 
